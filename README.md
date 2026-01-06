@@ -43,7 +43,9 @@ for pid in /proc/[0-9]*; do
 done
 ```
 
-# Or, if too massive
+---
+
+# Or, if /proc/[0-9]* is too massive
 
 On VM1:
 
