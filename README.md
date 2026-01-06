@@ -12,3 +12,33 @@ paste .sh file contents.
 `chmod +x /usr/local/bin/vps-audit.sh`
 
 `sudo /usr/local/bin/vps-audit.sh`
+
+
+# More testing
+
+If you own two VPS instances on the same server, you can test if you can have memory access to the adjacent VPS. Simple test:
+
+Theoretical test (requires 2 VMs you control).
+
+### On VM1: Create identifiable data
+
+```
+#!/bin/bash
+SECRET="CROSS_VM_TEST_$(date +%s)_UNIQUE_STRING"
+echo $SECRET
+while true; do
+  echo $SECRET > /dev/null
+  sleep 1
+done
+```
+
+### On VM2: Try to find it
+
+```
+# On VM2: Try to find it
+#!/bin/bash
+
+for pid in /proc/[0-9]*; do
+    grep -a "CROSS_VM_TEST" $pid/mem 2>/dev/null && echo "FOUND IN $pid"
+done
+```
