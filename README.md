@@ -1,6 +1,6 @@
 # Simple VPS Audit
 
-Checks virtualization type, memory isolation, and **some** security hardening on a VPS and notifies if there are any issues. 
+Checks virtualization type, memory isolation, and **some** security hardening on a VPS and notifies if there are any glaring issues. If there are, discuss with your VPS provider.
 
 Uses: Useful for having a quick glance for obvious faults, when instaling or modifying a VPS. 
 
