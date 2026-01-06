@@ -5,6 +5,9 @@ Checks virtualization type, memory isolation, and **some** security hardening on
 - Uses: useful for having a quick glance for obvious faults, when instaling, modifying or auditing a VPS. 
 - What it cannot do: the script doesn't do a comprehensive malware/virus/trojan scan.
 
+`nano /usr/local/bin/vps-audit.sh`
+
+paste .sh file contents.
 
 `chmod +x /usr/local/bin/vps-audit.sh`
 
