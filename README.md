@@ -1,4 +1,4 @@
-# VPS-Audit
+# Simple VPS Audit
 
 Checks virtualization type, memory isolation, and **some** security hardening on a VPS and notifies if there are any issues. 
 
