@@ -14,7 +14,7 @@ paste .sh file contents.
 `sudo /usr/local/bin/vps-audit.sh`
 
 
-# More testing
+# Test Cross-VM Isolation
 
 If you own two VPS instances on the same server, you can test if you can have memory access to the adjacent VPS. Simple test:
 
