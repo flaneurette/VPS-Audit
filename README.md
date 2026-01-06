@@ -2,6 +2,6 @@
 
 Checks virtualization type, memory isolation, and security hardening on a VPS and notifies if there are any issues.
 
-`chmod +x /user/local/bin/vps-audit.sh`
+`chmod +x /usr/local/bin/vps-audit.sh`
 
-`sudo /user/local/bin/vps-audit.sh`
+`sudo /usr/local/bin/vps-audit.sh`
